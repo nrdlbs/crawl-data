@@ -1,0 +1,90 @@
+================================================================================
+                  PROCESS MONITOR - 2025-04-26T16:28:49.737615                  
+================================================================================
+Process IDStatus      Progress    Current Market      Markets        Records     API Calls   
+--------------------------------------------------------------------------------
+1         running     100.0%                          0/12           0           0           
+2         running     100.0%                          0/12           0           0           
+3         running     100.0%                          0/12           0           0           
+4         running     100.0%                          0/12           0           0           
+5         running     100.0%                          0/12           0           0           
+6         running     100.0%                          0/12           0           0           
+7         running     91.7%                           0/12           0           0           
+8         running     81.2%                           0/16           0           0           
+--------------------------------------------------------------------------------
+Overall Progress: 96.6%
+================================================================================
+
+DETAILED STATUS:
+
+PROCESS 1:
+  Status: running
+  Current Market: 
+  Progress: 100.0%
+  Markets Processed: 0/12
+  Records Saved: 0
+  API Calls: 0
+  Last Update: 2025-04-26T16:28:39.722243
+
+PROCESS 2:
+  Status: running
+  Current Market: 
+  Progress: 100.0%
+  Markets Processed: 0/12
+  Records Saved: 0
+  API Calls: 0
+  Last Update: 2025-04-26T16:28:39.738982
+
+PROCESS 3:
+  Status: running
+  Current Market: 
+  Progress: 100.0%
+  Markets Processed: 0/12
+  Records Saved: 0
+  API Calls: 0
+  Last Update: 2025-04-26T16:28:39.722471
+
+PROCESS 4:
+  Status: running
+  Current Market: 
+  Progress: 100.0%
+  Markets Processed: 0/12
+  Records Saved: 0
+  API Calls: 0
+  Last Update: 2025-04-26T16:28:39.756147
+
+PROCESS 5:
+  Status: running
+  Current Market: 
+  Progress: 100.0%
+  Markets Processed: 0/12
+  Records Saved: 0
+  API Calls: 0
+  Last Update: 2025-04-26T16:28:39.741579
+
+PROCESS 6:
+  Status: running
+  Current Market: 
+  Progress: 100.0%
+  Markets Processed: 0/12
+  Records Saved: 0
+  API Calls: 0
+  Last Update: 2025-04-26T16:28:39.725997
+
+PROCESS 7:
+  Status: running
+  Current Market: 
+  Progress: 91.7%
+  Markets Processed: 0/12
+  Records Saved: 0
+  API Calls: 0
+  Last Update: 2025-04-26T16:28:39.745909
+
+PROCESS 8:
+  Status: running
+  Current Market: 
+  Progress: 81.2%
+  Markets Processed: 0/16
+  Records Saved: 0
+  API Calls: 0
+  Last Update: 2025-04-26T16:28:39.736938
