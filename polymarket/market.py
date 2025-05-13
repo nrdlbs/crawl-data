@@ -42,6 +42,8 @@ def extract_market_data(event):
             'event_title': event_title,
             'event_slug': event_slug,
             'event_description': event_description,
+            'event_outcomes': market.get('outcomes'),
+            'event_outcome_prices': market.get('outcomePrices'),
             'series_title': series_title,
             'series_slug': series_slug
         }
