@@ -94,7 +94,7 @@ def process_market(market_id: str, api_call_count: int) -> Tuple[Optional[List[D
     print(f"Fetching market data for ID: {market_id}")
     market_data_result = get_market_by_id(market_id, api_call_count)
     market_data, api_call_count = market_data_result
-    
+
     if not market_data:
         print(f"No market data found for {market_id}, skipping")
         return None, api_call_count
@@ -141,7 +141,9 @@ def process_market(market_id: str, api_call_count: int) -> Tuple[Optional[List[D
             'price': token.get('price', 0),
             'market_id': market_id,
             'market_slug': market_slug,
-            'history_price': history
+            'history_price': history, 
+            'outcomes': market_data.get('outcomes', []),
+            'outcome_prices': market_data.get('outcomePrices', [])
         }
         
         results.append(result)
@@ -298,6 +300,8 @@ def worker_process(start_idx: int, end_idx: int, market_ids: List[str], output_f
     """Worker process to handle a range of market IDs"""
     print(f"Process starting: Processing market IDs from index {start_idx} to {end_idx}")
     print(f"Output file: {output_file}")
+
+
     
     all_results = []
     api_call_count = 0
@@ -314,8 +318,9 @@ def worker_process(start_idx: int, end_idx: int, market_ids: List[str], output_f
             if market_id == mile_stone:
                 active = True
                 continue
-            if not active:
-                continue
+            # if not active:
+            #     print('22222')
+            #     continue
 
             print(f"\n[{i+1}/{len(market_ids)}] Processing market ID: {market_id}")
             
@@ -454,6 +459,7 @@ def main():
     
     # Merge all JSON files into a single file
     input_files = [f"price_{i+1}.json" for i in range(NUM_PROCESSES)]
+    print('input_files', input_files)
     total_records = merge_json_files(input_files, "price.json")
     
     print(f"Data collection complete. Total records: {total_records}")
